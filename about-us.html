@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <!-- Row 1: Brand -->
+            <div class="row-top">
+                <div class="brand">
+                    <img src="img/logo.png" alt="Logo" class="brand-logo">
+                    <div class="brand-text">
+                        <h1>Guangzhou Explorer</h1>
+                        <p>Explore the Deep &amp; Real Guangzhou</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2: Left Book Now, Right Contact us -->
+            <div class="row-bottom">
+                <a href="https://your-booking-link.com" class="book-btn">Book Now</a>
+                <div class="header-right">
+                    <span class="contact-title">Contact us</span>
+                    <div class="contact-box">
+                        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://your-wechat-link.com" target="_blank" aria-label="WeChat"><i
+                                class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tabs（本页高亮 How to book） -->
+    <div class="tabs">
+        <a href="index.html">Tours</a>
+        <a href="how-to-book.html">How to book</a>
+        <a href="about-us.html" class="active">About us</a>
+    </div>
+
+    <!-- 内容 -->
+    <main class="content-wrap">
+        <h2 class="reviews__title">Focused on Guangzhou & Beyond</h2>
+        <p class="lead">
+            We are a dedicated inbound tourism team, specializing in immersive experiences in Guangzhou and its
+            surrounding areas.
+            Over the years, we’ve served travelers from <span class="hl">30+ countries</span>, welcoming more than <span
+                class="hl">800+
+                guests</span>.
+            Our team includes expert itinerary designers, ensuring each tour is tailored to your interests and comfort.
+        </p>
+        <h2 class="reviews__title">Meet Our Guides</h2>
+        <!-- Guides (aligned with content-wrap) -->
+        <section class="guides guides--inline">
+            <div class="guides__grid">
+                <!-- 1 -->
+                <article class="guide-card">
+                    <a class="guide-card__media">
+                        <img src="img/guides/golden.jpg" alt="Golden guide photo">
+                    </a>
+                    <div class="guide-card__body">
+                        <h3>Golden</h3>
+                        <p>Hi, I’m Golden. I’ve been living in Guangzhou for 6 years, and I also studied in the UK. I
+                            love outdoor activities and adventure, and I’ll make sure our tours are exciting and
+                            memorable.</p>
+                    </div>
+                </article>
+
+                <!-- 2 -->
+                <article class="guide-card">
+                    <a class="guide-card__media">
+                        <img src="img/guides/lucky.jpg" alt="Lucky guide photo">
+                    </a>
+                    <div class="guide-card__body">
+                        <h3>Lucky</h3>
+                        <p>I was born and raised in Guangzhou, so I know the city really well. I’m a huge foodie and
+                            love finding hidden street food gems. I also enjoy hiking and exploring the city, so I’ll
+                            show you the fun side of Guangzhou.</p>
+                    </div>
+                </article>
+                <!-- 3 -->
+                <article class="guide-card">
+                    <a class="guide-card__media">
+                        <img src="img/guides/joy.jpg" alt="Lucky guide photo">
+                    </a>
+                    <div class="guide-card__body">
+                        <h3>Joy</h3>
+                        <p>I studied English and have been living in Guangzhou for over 10 years. I love sharing the
+                            city’s culture and stories while making sure you have a smooth and enjoyable experience.</p>
+                    </div>
+                </article>
+                <!-- 4 -->
+                <article class="guide-card">
+                    <a class="guide-card__media">
+                        <img src="img/guides/manna.jpg" alt="Lucky guide photo">
+                    </a>
+                    <div class="guide-card__body">
+                        <h3>Manna</h3>
+                        <p>I grew up in Guangzhou and have traveled to over 30 countries. I enjoy sharing travel stories
+                            and connecting them with the culture and history of our city. I can’t wait to show you the
+                            best of Guangzhou.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title">What Our Guests Say</h2>
+            <div class="reviews__wrap">
+                <!-- Left: rating summary -->
+                <aside class="reviews__left">
+                    <div class="score-badge">Excellent</div>
+                    <div class="stars" aria-label="5 out of 5">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="score-text">4.6 / 5</div>
+                    <div class="trust">
+                        <span class="trust-star">★</span>
+                        Trustpilot
+                    </div>
+                </aside>
+
+                <!-- Right: slider -->
+                <div class="reviews__right">
+                    <div class="review-slider" id="reviewSlider">
+                        <!-- slide 1 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">S</div>
+                                <div class="meta-text">
+                                    <div class="name">Sarah</div>
+                                    <div class="date">April 12, 2025</div>
+                                    <div class="line-stars">★★★★★</div>
+                                    <div class="title">Lucky is so good! Had an amazing experience in Shenzhen with the
+                                        driverless metro and drone food delivery. Everything was exciting!</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- slide 2 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">A</div>
+                                <div class="meta-text">
+                                    <div class="name">Abubakar</div>
+                                    <div class="date">Aug 28, 2025</div>
+                                    <div class="line-stars">★★★★</div>
+                                    <div class="title">Golden guided us through Guangzhou with great knowledge and
+                                        patience. Loved wandering the streets, visiting historic sites, and tasting
+                                        local food. Truly a local experience!</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- slide 3 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">A</div>
+                                <div class="meta-text">
+                                    <div class="name">Aiman</div>
+                                    <div class="date">Sep 1, 2025</div>
+                                    <div class="line-stars">★★★★★</div>
+                                    <div class="title">The trip to Gulong Gorge was thrilling, with breathtaking scenery
+                                        and exciting activities. Everything was well-organized and comfortable.</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- controls -->
+                        <div class="review-controls">
+                            <button class="ctrl prev" aria-label="Previous review">‹</button>
+                            <div class="dots" id="reviewDots" aria-label="Slider pagination"></div>
+                            <button class="ctrl next" aria-label="Next review">›</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script>
+        (function () {
+            const slider = document.getElementById('reviewSlider');
+            const slides = Array.from(slider.querySelectorAll('.review-slide'));
+            const dotsWrap = document.getElementById('reviewDots');
+            const prev = document.querySelector('.review-controls .prev');
+            const next = document.querySelector('.review-controls .next');
+
+            let i = 0, timer = null, delay = 4000;
+
+            // build dots
+            slides.forEach((_, idx) => {
+                const b = document.createElement('button');
+                b.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+                b.addEventListener('click', () => go(idx, true));
+                dotsWrap.appendChild(b);
+            });
+
+            function render() {
+                slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+                dotsWrap.querySelectorAll('button').forEach((d, idx) =>
+                    d.classList.toggle('is-active', idx === i)
+                );
+            }
+
+            function go(n, manual = false) {
+                i = (n + slides.length) % slides.length;
+                render();
+                if (manual) restart();
+            }
+
+            function nextSlide() { go(i + 1); }
+            function prevSlide() { go(i - 1); }
+
+            function start() { timer = setInterval(nextSlide, delay); }
+            function stop() { clearInterval(timer); timer = null; }
+            function restart() { stop(); start(); }
+
+            // init
+            render(); start();
+
+            // controls
+            next.addEventListener('click', () => go(i + 1, true));
+            prev.addEventListener('click', () => go(i - 1, true));
+
+            // pause on hover
+            slider.addEventListener('mouseenter', stop);
+            slider.addEventListener('mouseleave', start);
+        })();
+    </script>
+    <!-- 页脚（与主页一致） -->
+    <!-- 直接复用你现有 footer 的完整 HTML，这里略。 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <!-- 左列：Contact Us -->
+                <div class="footer-left">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:19521235947@163.com">19521235947@163.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+8613812345678">+86 177 2815 4476</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://example.com"
+                                style="color: rgb(37, 211, 102); font-weight: bold; text-decoration: underline;">Chat on
+                                WhatsApp </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-weixin"></i>
+                            <a href="https://wa.me/8613812345678" target="_blank">WeChat ID: 821828626</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右列：Follow Us 团队账号 -->
+                <div class="footer-right">
+                    <h3>Follow Us for More Travel Tips</h3>
+                    <p class="footer-desc">Discover Canton through our team's authentic experiences</p>
+                    <ul class="team-socials">
+                        <li>
+                            <i class="fab fa-tiktok"></i> <span>Lucky</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-tiktok"></i> <span>Golden</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <!-- Row 1: Brand -->
+            <div class="row-top">
+                <div class="brand">
+                    <img src="img/logo.png" alt="Logo" class="brand-logo">
+                    <div class="brand-text">
+                        <h1>Guangzhou Explorer</h1>
+                        <p>Explore the Deep &amp; Real Guangzhou</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2: Left Book Now, Right Contact us -->
+            <div class="row-bottom">
+                <a href="https://your-booking-link.com" class="book-btn">Book Now</a>
+                <div class="header-right">
+                    <span class="contact-title">Contact us</span>
+                    <div class="contact-box">
+                        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://your-wechat-link.com" target="_blank" aria-label="WeChat"><i
+                                class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tabs（本页高亮 How to book） -->
+    <div class="tabs">
+        <a href="index.html">Tours</a>
+        <a href="how-to-book.html" class="active">How to book</a>
+        <a href="about-us.html">About us</a>
+    </div>
+
+    <!-- 内容 -->
+    <main class="content-wrap">
+        <!-- 两个方式 -->
+        <section class="book-options">
+            <!-- 方式一 -->
+            <article class="option-card">
+                <div class="option-caption">Option 1</div>
+                <h3><strong>Submit a Booking Form</strong></h3>
+                <p>Fill out our quick form. Our team will contact you to confirm and answer questions.</p>
+                <a href="https://example.com/booking-form" class="btn btn-primary">Submit Form</a>
+            </article>
+
+            <!-- 方式二 -->
+            <article class="option-card">
+                <div class="option-caption">Option 2</div>
+                <h3><strong>Contact Us Directly</strong></h3>
+                <p>Message our trip planner via WhatsApp, WeChat, or Email. We’ll help you plan your trip personally.
+                </p>
+                <a href="https://wa.me/8617728154476" class="btn btn-primary">Chat on Whatsapp</a>
+            </article>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact-info-block">
+            <h2 class="reviews__title">Contact Info</h3>
+            <div class="contact-info-grid">
+                <div class="ci-item">
+                    <div class="ci-label"><i class="fab fa-whatsapp"></i> Whatsapp</div>
+                    <div class="ci-value">+86 177 2815 4476</a>
+                    </div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-label"><i class="fab fa-weixin"></i> WeChat</div>
+                    <div class="ci-value"><span>ID: 821828626</span></div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-label"><i class="fa-regular fa-envelope"></i> Email</div>
+                    <div class="ci-value"><a href="mailto:19521235947@163.com">19521235947@163.com</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 预订与支付 -->
+        <section class="reservation-block">
+            <h2 class="reviews__title">Reservation &amp; Payment</h3>
+            <ol class="steps-list">
+                <li>To confirm your booking, a 20% deposit via Alipay is required.</li>
+                <li>The remaining balance is collected on the day of the tour.</li>
+                <li>After receiving your deposit, we will send a customized itinerary for your review and adjustment.
+                </li>
+                <li>On the travel day, the itinerary can still be flexibly adjusted based on your preferences and
+                    real-time conditions.</li>
+            </ol>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title">What Our Guests Say</h2>
+            <div class="reviews__wrap">
+                <!-- Left: rating summary -->
+                <aside class="reviews__left">
+                    <div class="score-badge">Excellent</div>
+                    <div class="stars" aria-label="5 out of 5">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="score-text">4.6 / 5</div>
+                    <div class="trust">
+                        <span class="trust-star">★</span>
+                        Trustpilot
+                    </div>
+                </aside>
+
+                <!-- Right: slider -->
+                <div class="reviews__right">
+                    <div class="review-slider" id="reviewSlider">
+                        <!-- slide 1 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">S</div>
+                                <div class="meta-text">
+                                    <div class="name">Sarah</div>
+                                    <div class="date">April 12, 2025</div>
+                                    <div class="line-stars">★★★★★</div>
+                                    <div class="title">Lucky is so good! Had an amazing experience in Shenzhen with the
+                                        driverless metro and drone food delivery. Everything was exciting!</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- slide 2 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">A</div>
+                                <div class="meta-text">
+                                    <div class="name">Abubakar</div>
+                                    <div class="date">Aug 28, 2025</div>
+                                    <div class="line-stars">★★★★</div>
+                                    <div class="title">Golden guided us through Guangzhou with great knowledge and
+                                        patience. Loved wandering the streets, visiting historic sites, and tasting
+                                        local food. Truly a local experience!</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- slide 3 -->
+                        <article class="review-slide is-active">
+                            <!--img src="review1.jpg" alt="Guest review 1" -->
+                            <div class="review-meta">
+                                <div class="avatar">A</div>
+                                <div class="meta-text">
+                                    <div class="name">Aiman</div>
+                                    <div class="date">Sep 1, 2025</div>
+                                    <div class="line-stars">★★★★★</div>
+                                    <div class="title">The trip to Gulong Gorge was thrilling, with breathtaking scenery
+                                        and exciting activities. Everything was well-organized and comfortable.</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- controls -->
+                        <div class="review-controls">
+                            <button class="ctrl prev" aria-label="Previous review">‹</button>
+                            <div class="dots" id="reviewDots" aria-label="Slider pagination"></div>
+                            <button class="ctrl next" aria-label="Next review">›</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script>
+        (function () {
+            const slider = document.getElementById('reviewSlider');
+            const slides = Array.from(slider.querySelectorAll('.review-slide'));
+            const dotsWrap = document.getElementById('reviewDots');
+            const prev = document.querySelector('.review-controls .prev');
+            const next = document.querySelector('.review-controls .next');
+
+            let i = 0, timer = null, delay = 4000;
+
+            // build dots
+            slides.forEach((_, idx) => {
+                const b = document.createElement('button');
+                b.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+                b.addEventListener('click', () => go(idx, true));
+                dotsWrap.appendChild(b);
+            });
+
+            function render() {
+                slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+                dotsWrap.querySelectorAll('button').forEach((d, idx) =>
+                    d.classList.toggle('is-active', idx === i)
+                );
+            }
+
+            function go(n, manual = false) {
+                i = (n + slides.length) % slides.length;
+                render();
+                if (manual) restart();
+            }
+
+            function nextSlide() { go(i + 1); }
+            function prevSlide() { go(i - 1); }
+
+            function start() { timer = setInterval(nextSlide, delay); }
+            function stop() { clearInterval(timer); timer = null; }
+            function restart() { stop(); start(); }
+
+            // init
+            render(); start();
+
+            // controls
+            next.addEventListener('click', () => go(i + 1, true));
+            prev.addEventListener('click', () => go(i - 1, true));
+
+            // pause on hover
+            slider.addEventListener('mouseenter', stop);
+            slider.addEventListener('mouseleave', start);
+        })();
+    </script>
+    <!-- 页脚（与主页一致） -->
+    <!-- 直接复用你现有 footer 的完整 HTML，这里略。 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <!-- 左列：Contact Us -->
+                <div class="footer-left">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:19521235947@163.com">19521235947@163.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+8613812345678">+86 177 2815 4476</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://example.com"
+                                style="color: rgb(37, 211, 102); font-weight: bold; text-decoration: underline;">Chat on
+                                WhatsApp </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-weixin"></i>
+                            <a href="https://wa.me/8613812345678" target="_blank">WeChat ID: 821828626</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右列：Follow Us 团队账号 -->
+                <div class="footer-right">
+                    <h3>Follow Us for More Travel Tips</h3>
+                    <p class="footer-desc">Discover Canton through our team's authentic experiences</p>
+                    <ul class="team-socials">
+                        <li>
+                            <i class="fab fa-tiktok"></i> <span>Lucky</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-tiktok"></i> <span>Golden</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
