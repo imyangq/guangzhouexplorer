@@ -715,7 +715,7 @@ body { padding-top: var(--header-h); }
   margin: 20px auto 40px;
   padding: 0 20px;
 }
-.content-wrap h2{ margin: 6px 0 10px; }
+.content-wrap h2{ text-align: center; margin: 6px 0 10px; }
 .lead{ color:#4b5563; line-height:1.7; margin-bottom:14px; }
 
 /* 步骤列表（How to book） */
@@ -744,3 +744,173 @@ body { padding-top: var(--header-h); }
   .info-panels{ grid-template-columns:1fr; }
   .about-grid{ grid-template-columns:1fr; }
 }
+
+/* ===== Guides (shared) ===== */
+.guides{ /* 默认可用于独立版块（比如首页 1200px 版心） */
+  max-width: 1200px;
+  margin: 26px auto;
+  padding: 0 20px;
+}
+.guides__title{ text-align:center; font-size:24px; margin:0 0 16px; }
+.guides__title .sub{ font-size:14px; color:#6b7280; }
+
+.guides__grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+
+/* 卡片：左右两列；偶数项反向，形成交错布局 */
+.guide-card{ display:grid; grid-template-columns: 260px 1fr; align-items:start; gap:18px; }
+
+.guide-card__media{
+  position:relative; display:block; border-radius:14px; overflow:hidden;
+  box-shadow:0 10px 18px rgba(0,0,0,.08);
+}
+.guide-card__media img{ width:100%; height:340px; object-fit:cover; display:block; }
+.play-badge{
+  position:absolute; right:12px; bottom:12px; width:36px; height:36px; border-radius:999px;
+  background:#0f1f2e; color:#fff; display:grid; place-items:center;
+  opacity:.9; transition:transform .2s, opacity .2s;
+}
+.guide-card__media:hover .play-badge{ transform:scale(1.08); opacity:1; }
+
+.guide-card__body h3{ margin:6px 0 8px; font-size:18px; }
+.guide-card__body p{ color:#374151; line-height:1.7; margin:0; }
+
+/* === 关键：在 content-wrap 内对齐 === */
+.guides--inline{ max-width:none; margin:26px 0; padding:0; }
+.guides--inline .guides__title{ text-align:left; }
+
+/* 响应式 */
+@media (max-width: 1100px){
+  .guide-card{ grid-template-columns: 280px 1fr; }
+  .guide-card:nth-child(even){ grid-template-columns: 1fr 280px; }
+  .guide-card__media img{ height:300px; }
+}
+@media (max-width: 800px){
+  .guides__grid{ grid-template-columns:1fr; }
+  .guide-card,
+  .guide-card:nth-child(even){ grid-template-columns:1fr; }
+  .guide-card__media img{ height:320px; }
+}
+
+.hl {
+  font-weight: 700;            /* 加粗 */
+  /*background: #fff3cd;         /* 高亮底色（浅黄） */
+  color: #c90909ce;                 /* 文字颜色 */
+  /*padding: 2px 6px;            /* 内边距，让底色不贴字 */
+  border-radius: 6px;          /* 圆角 */
+}
+.hl-block {                     /* 整行高亮：占满一行 */
+  display: block;
+  padding: 8px 12px;
+  background: #fff3cd;
+  border-left: 4px solid #f59e0b; /* 视觉强调，可删 */
+  font-weight: 700;
+}
+
+/* ===== How to Book 新版 ===== */
+/* 两个方式的卡片 */
+.book-options{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 8px;
+}
+.option-card{
+  border: 2px solid #2a6ebd;         /* 与站点蓝一致 */
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 18px 20px;
+}
+.option-caption{
+  text-align: center;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.option-card h3{
+  text-align: center;
+  margin: 0 0 8px;
+}
+.option-card p{
+  color: #374151;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+/* 按钮 */
+.btn{ display: inline-block; padding: 12px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.btn-primary{ background: #5b96d2; color: #fff; border: 1px solid #2a6ebd; }
+.option-card .btn-primary{ display: block; width: 70%; margin: 10px auto 0; text-align: center; }
+
+/* 联系信息 */
+.contact-info-block{ margin-top: 24px; }
+.center{ text-align: center; }
+.contact-info-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+.ci-item{ text-align: center; }
+.ci-label{ font-weight: 600; margin-bottom: 10px; color: #111827; }
+.ci-label i{ margin-right: 6px; color: #2a6ebd; }
+.ci-value a, .ci-value span{ color: #1f2937; text-decoration: none; font-size: 17px; }
+.ci-value a:hover{ text-decoration: underline; }
+
+/* 预订与支付说明 */
+.reservation-block{ margin-top: 28px; }
+.steps-list{
+  max-width: 800px;
+  margin: 12px auto 0;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+  color: #374151;
+}
+.steps-list li{ margin-bottom: 12px; }
+
+/* 响应式 */
+@media (max-width: 900px){
+  .book-options{ grid-template-columns: 1fr; }
+  .option-card .btn-primary{ width: 100%; }
+  .contact-info-grid{ grid-template-columns: 1fr; }
+}
+
+/* 让 Reservation 区块与上面卡片同宽对齐 */
+.reservation-block { 
+  margin-top: 28px;        /* 保持与上方间距 */
+}
+
+/* 关键：去掉居中与800px限制，宽度跟随 content-wrap */
+.reservation-block .steps-list {
+  max-width: none;         /* 取消宽度上限 */
+  margin: 12px 0 0;        /* 取消 auto 导致的水平居中 */
+  padding-left: 1.25rem;   /* 保留序号缩进 */
+}
+
+/* 让下方内容（steps-list）有边框卡片效果，并与上方卡片对齐 */
+.reservation-block { 
+  margin-top: 28px;
+}
+
+.reservation-block .steps-list {
+  /* 宽度跟随 content-wrap，不再收窄或水平居中 */
+  max-width: none;
+  margin: 12px 0 0;
+
+  /* 边框与外观 */
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #2a6ebd;   /* 品牌色强调，可去掉 */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
+
+  /* 内边距：给序号留空间 */
+  padding: 14px 16px 14px 2rem;
+
+  /* 列表排版 */
+  line-height: 1.8;
+  color: #374151;
+}
+
+/* 每条之间留点空隙 */
+.reservation-block .steps-list li { 
+  margin-bottom: 12px; 
+}
+
