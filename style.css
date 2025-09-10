@@ -353,7 +353,7 @@ body { padding-top: var(--header-h); }
   width: 100%;
   display: none;
   position: relative;
-  min-height: 120px;
+  min-height: 150px;
 }
 .review-slide.is-active { display: block; }
 
@@ -571,7 +571,7 @@ body { padding-top: var(--header-h); }
   font-size: 15px;
 }
 .contact-info i {
-  color: #2a6ebd;
+  color: #f7f7f7;
   font-size: 18px;
   width: 20px;
   text-align: center;
@@ -613,7 +613,7 @@ body { padding-top: var(--header-h); }
   margin-bottom: 10px;
 }
 .team-socials i {
-  color: #d1d5db;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -836,7 +836,7 @@ body { padding-top: var(--header-h); }
 }
 /* 按钮 */
 .btn{ display: inline-block; padding: 12px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; }
-.btn-primary{ background: #5b96d2; color: #fff; border: 1px solid #2a6ebd; }
+.btn-primary{ background: #2a6ebd; color: #fff; border: 1px solid #2a6ebd; }
 .option-card .btn-primary{ display: block; width: 70%; margin: 10px auto 0; text-align: center; }
 
 /* 联系信息 */
@@ -914,3 +914,7 @@ body { padding-top: var(--header-h); }
   margin-bottom: 12px; 
 }
 
+/* 去掉 Latest reviews 内容区的加粗 */
+.reviews .review-meta .title {
+  font-weight: 400;  /* normal */
+}
