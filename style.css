@@ -1,0 +1,745 @@
+/* Base */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111827;
+}
+
+/* ===== Fixed Header (two rows) ===== */
+:root { --header-h: 140px; } /* space reserved for fixed header (adjust if needed) */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e9eef3;
+  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px 14px;
+}
+
+/* Row 1: brand */
+.row-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: .3px;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Row 2: book left, contact right */
+.row-bottom {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Book Now Button */
+.book-btn {
+  background: #2a6ebd;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Contact us Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-title {
+  font-size: 22px;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+  background: #eef3f7;
+  border-radius: 10px;
+}
+
+.contact-box a {
+  display: inline-flex;
+  line-height: 0;
+  text-decoration: none;
+  color: #374151;
+  font-size: 20px;
+}
+
+.contact-box a:hover { opacity: .9; }
+
+/* Leave space for the fixed header */
+body { padding-top: var(--header-h); }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.tabs a {
+  padding: 10px 4px;
+  text-decoration: none;
+  color: #374151;
+}
+.tabs a.active {
+  border-bottom: 2px solid #2a6ebd;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  justify-content: center; /* 水平居中 */
+}
+
+.tour-section { margin-bottom: 40px; }
+.tour-section h2 { font-size: 20px; }
+
+.view-link {
+  font-size: 14px;
+  color: #2a6ebd;
+  text-decoration: none;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tour-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.tour-card:hover { transform: translateY(-4px); }
+
+.tour-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tour-info { padding: 15px; }
+
+.tour-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.tour-info p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: 700;
+  color: #2a6ebd;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.icons i { margin-right: 6px; color: #4b5563; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  :root { --header-h: 168px; } /* slightly larger to avoid overlap on small screens */
+  .header-inner { padding: 10px 16px 12px; }
+  .brand-logo { width: 48px; height: 48px; }
+  .brand-text h1 { font-size: 24px; }
+  .row-bottom { margin-top: 8px; }
+  .contact-title { font-size: 18px; }
+  .contact-box { gap: 14px; padding: 8px 12px; }
+  .tour-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Why Travel With Us ===== */
+.why-us {
+  max-width: 1200px;
+  margin: 48px auto 24px;
+  padding: 0 20px;
+}
+
+.why-us__title {
+  text-align: center;
+  font-size: 28px;
+  color: #7a2d22;              /* 温暖一点的标题色，可改 */
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.why-us__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.why-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px 20px 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.06);
+  border-color: #d8dee6;
+}
+
+.why-card__icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 14px;
+  border-radius: 999px;
+  background: #eceff4;                     /* 浅底圆 */
+  display: grid;
+  place-items: center;
+}
+
+.why-card__icon i {
+  font-size: 22px;
+  color: #2a6ebd;                          /* 品牌蓝，与站点统一 */
+}
+
+.why-card__heading {
+  font-size: 18px;
+  margin: 6px 0 10px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.why-card__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+  .why-us__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .why-us__grid { grid-template-columns: 1fr; }
+  .why-us__title { font-size: 24px; }
+}
+
+/* ===== Latest Reviews ===== */
+.reviews {
+  background: #ffffff3a;     /* 轻米色，可调 */
+  padding: 36px 0 48px;
+}
+.reviews__title {
+  text-align: center;
+  font-size: 28px;
+  color: #21334b;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.reviews__wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+}
+
+/* left panel */
+.reviews__left {
+  background: transparent;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+.score-badge {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  color: #7a2d22;
+  font-weight: 700;
+}
+.stars span { color: #1fb141; font-size: 18px; margin-right: 2px; }
+.score-text { color: #333; font-weight: 600; }
+.trust { display: flex; align-items: center; gap: 8px; color: #118955; font-weight: 700; }
+.trust-star { color: #118955; }
+
+/* right slider area */
+.reviews__right {
+  position: relative;
+}
+
+.review-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 18px rgba(0,0,0,.08);
+  background: #fff;
+}
+
+/* slides */
+.review-slide {
+  width: 100%;
+  display: none;
+  position: relative;
+  min-height: 240px;
+}
+.review-slide.is-active { display: block; }
+
+.review-slide img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* meta overlay card */
+.review-meta {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 12px;
+  align-items: center;
+  background: #fff;
+  margin: -20px 16px 16px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.08);
+}
+.avatar {
+  width: 44px; height: 44px; border-radius: 999px;
+  display: grid; place-items: center;
+  background: #6b5cff; color: #fff; font-weight: 700;
+}
+.meta-text .name { font-weight: 700; color: #1f2937; }
+.meta-text .date { font-size: 12px; color: #6b7280; margin: 2px 0 4px; }
+.meta-text .line-stars { color: #1fb141; letter-spacing: 1px; }
+.meta-text .title { margin-top: 6px; font-weight: 700; color: #1f2937; }
+
+/* controls */
+.review-controls {
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.ctrl {
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  border: none;
+  background: #0f1f2e;
+  color: #fff; font-size: 20px;
+  cursor: pointer;
+}
+.ctrl:hover { opacity: .85; }
+
+.dots {
+  display: flex; justify-content: center; gap: 8px;
+}
+.dots button {
+  width: 8px; height: 8px; border-radius: 50%;
+  border: none; background: #cfd6de; cursor: pointer;
+}
+.dots button.is-active { background: #2a6ebd; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .reviews__wrap { grid-template-columns: 1fr; }
+  .reviews__left { align-items: center; text-align: center; }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #0f1f2e;       /* 深色背景 */
+  color: #fff;
+  padding: 40px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 第一行标题 */
+.footer-title {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+/* 内容区域：两列布局 */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #f0f4f8;
+}
+
+/* 左侧联系信息 */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+.contact-info i {
+  color: #2a6ebd;
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+}
+.contact-info a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #ffffff;
+}
+
+/* 右侧社交链接 */
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2a6ebd;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+  background: #1b4a80;
+  transform: translateY(-3px);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contact-info li {
+    justify-content: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #304b64;
+  color: #fff;
+  padding: 40px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 标题 */
+.footer-title {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+/* 左右布局 */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* 左列：Contact Us */
+.footer-left h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #f0f4f8;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+.contact-info i {
+  color: #2a6ebd;
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+}
+.contact-info a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #ffffff;
+}
+
+/* 右列：Follow Us */
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f0f4f8;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: #d1d5db;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* 团队成员 TikTok 列表 */
+.team-socials {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+.team-socials li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e5e7eb;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.team-socials i {
+  color: #d1d5db;
+  font-size: 18px;
+}
+
+/* 品牌社交账号 */
+.brand-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e5e7eb;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.brand-social i {
+  font-size: 18px;
+  color: #d1d5db;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contact-info li,
+  .team-socials li,
+  .brand-social {
+    justify-content: center;
+  }
+}
+
+.tour-link { text-decoration: none; color: inherit; display:block; }
+.tour-link:hover .tour-card { transform: translateY(-4px); }
+
+/* ===== Tour Detail ===== */
+.detail-breadcrumb{
+  max-width:1200px;margin:16px auto 8px;padding:0 20px;display:flex;align-items:center;gap:10px;color:#6b7280;
+}
+.back-btn{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#111827;background:#fff}
+.back-btn:hover{background:#f5f7fa}
+.detail-breadcrumb .crumb{font-size:14px}
+
+.tour-hero{max-width:1200px;margin:10px auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:20px;padding:0 20px}
+.tour-hero img{width:100%;height:340px;object-fit:cover;border-radius:12px}
+.tour-hero__text{display:flex;flex-direction:column;gap:10px}
+.tour-hero__text h2{margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;color:#374151}
+.hero-price{margin-left:auto;font-weight:700;color:#2a6ebd}
+.hero-cta{display:inline-block;background:#2a6ebd;color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px;width:fit-content}
+
+.tour-gallery{max-width:1200px;margin:18px auto;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tour-gallery .g-item img{width:100%;height:180px;object-fit:cover;border-radius:10px;cursor:pointer}
+
+.tour-section{max-width:1200px;margin:22px auto;padding:0 20px}
+.tour-section h3{margin-bottom:10px}
+.bullets{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.bullets li{display:flex;gap:8px;align-items:flex-start;color:#374151}
+.bullets i{color:#2a6ebd;margin-top:2px}
+.itinerary{margin:0;padding-left:18px;display:grid;gap:6px}
+.itinerary li span{display:inline-block;width:62px;color:#2a6ebd;font-weight:700}
+.note{color:#6b7280;margin-top:8px}
+
+@media (max-width: 900px){
+  .tour-hero{grid-template-columns:1fr}
+  .hero-price{margin-left:0}
+  .tour-gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 560px){
+  .tour-gallery{grid-template-columns:1fr}
+}
+
+/* 父容器：两列网格 */
+.tour-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 两列 */
+  gap: 20px;
+}
+
+/* 让 <a> 作为网格项填满单元格 */
+.tour-link{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 卡片撑满链接单元格 */
+.tour-card{
+  height: 100%;
+}
+
+/* 小屏幕降为一列（可按需调整断点） */
+@media (max-width: 900px){
+  .tour-grid{ grid-template-columns: 1fr; }
+}
+
+/* 通用内容容器 */
+.content-wrap{
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+}
+.content-wrap h2{ margin: 6px 0 10px; }
+.lead{ color:#4b5563; line-height:1.7; margin-bottom:14px; }
+
+/* 步骤列表（How to book） */
+.step-list{ list-style:none; padding:0; margin:18px 0; display:grid; gap:12px; }
+.step{
+  display:grid; grid-template-columns:40px 1fr; gap:12px;
+  padding:14px 16px; border:1px solid #e5e7eb; border-radius:12px; background:#fff;
+}
+.step-icon{ font-size:18px; color:#2a6ebd; line-height:40px; text-align:center; }
+
+/* 信息面板（两个页面复用） */
+.info-panels{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:14px; }
+.panel{ background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px 16px; }
+.panel h3{ margin:0 0 6px; font-size:16px; }
+.panel i{ color:#2a6ebd; margin-right:6px; }
+
+/* 关于我们：成员卡片 */
+.about-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin:16px 0; }
+.about-card{ background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px 16px; }
+.avatar{
+  width:44px;height:44px;border-radius:999px;background:#6b5cff;color:#fff;
+  display:grid;place-items:center;font-weight:700;margin-bottom:6px;
+}
+
+@media (max-width: 900px){
+  .info-panels{ grid-template-columns:1fr; }
+  .about-grid{ grid-template-columns:1fr; }
+}
