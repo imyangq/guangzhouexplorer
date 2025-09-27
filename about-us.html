@@ -29,9 +29,9 @@
                 <div class="header-right">
                     <span class="contact-title">Contact us</span>
                     <div class="contact-box">
-                        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i
+                        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp" rel="noopener noreferrer"><i
                                 class="fab fa-whatsapp"></i></a>
-                        <a href="https://your-wechat-link.com" target="_blank" aria-label="WeChat"><i
+                        <a href="https://your-wechat-link.com" target="_blank" aria-label="WeChat" rel="noopener noreferrer"><i
                                 class="fab fa-weixin"></i></a>
                     </div>
                 </div>
@@ -40,11 +40,11 @@
     </header>
 
     <!-- Tabs（本页高亮 How to book） -->
-    <div class="tabs">
+    <nav class="tabs" aria-label="Site">
         <a href="index.html">Tours</a>
         <a href="how-to-book.html">How to book</a>
-        <a href="about-us.html" class="active">About us</a>
-    </div>
+        <a href="about-us.html" aria-current="page" class="active">About us</a>
+    </nav>
 
     <!-- 内容 -->
     <main class="content-wrap">
@@ -63,9 +63,9 @@
             <div class="guides__grid">
                 <!-- 1 -->
                 <article class="guide-card">
-                    <a class="guide-card__media">
+                    <div class="guide-card__media">
                         <img src="img/guides/golden.jpg" alt="Golden guide photo">
-                    </a>
+                    </div>
                     <div class="guide-card__body">
                         <h3>Golden</h3>
                         <p>Hi, I’m Golden. I’ve been living in Guangzhou for 6 years, and I also studied in the UK. I
@@ -76,9 +76,9 @@
 
                 <!-- 2 -->
                 <article class="guide-card">
-                    <a class="guide-card__media">
+                    <div class="guide-card__media">
                         <img src="img/guides/lucky.jpg" alt="Lucky guide photo">
-                    </a>
+                    </div>
                     <div class="guide-card__body">
                         <h3>Lucky</h3>
                         <p>I was born and raised in Guangzhou, so I know the city really well. I’m a huge foodie and
@@ -88,9 +88,9 @@
                 </article>
                 <!-- 3 -->
                 <article class="guide-card">
-                    <a class="guide-card__media">
+                    <div class="guide-card__media">
                         <img src="img/guides/joy.jpg" alt="Lucky guide photo">
-                    </a>
+                    </div>
                     <div class="guide-card__body">
                         <h3>Joy</h3>
                         <p>I studied English and have been living in Guangzhou for over 10 years. I love sharing the
@@ -99,9 +99,9 @@
                 </article>
                 <!-- 4 -->
                 <article class="guide-card">
-                    <a class="guide-card__media">
+                    <div class="guide-card__media">
                         <img src="img/guides/manna.jpg" alt="Lucky guide photo">
-                    </a>
+                    </div>
                     <div class="guide-card__body">
                         <h3>Manna</h3>
                         <p>I grew up in Guangzhou and have traveled to over 30 countries. I enjoy sharing travel stories
@@ -262,7 +262,7 @@
                         </li>
                         <li>
                             <i class="fab fa-weixin"></i>
-                            <a href="https://wa.me/8613812345678" target="_blank">WeChat ID: 821828626</a>
+                            <a href="https://wa.me/8613812345678" target="_blank" rel="noopener noreferrer">WeChat ID: 821828626</a>
                         </li>
                     </ul>
                 </div>

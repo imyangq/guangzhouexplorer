@@ -170,11 +170,14 @@ body { padding-top: var(--header-h); }
 }
 
 .tour-card {
+  display: block;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
   transition: transform 0.2s;
+  text-decoration:none;
+  color:inherit;
 }
 
 .tour-card:hover { transform: translateY(-4px); }
