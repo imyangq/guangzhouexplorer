@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guangzhou Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Fixed Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Row 1: Brand -->
+      <div class="row-top">
+        <div class="brand">
+          <img src="img/logo.png" alt="Logo" class="brand-logo">
+          <div class="brand-text">
+            <h1>Guangzhou Explorer</h1>
+            <p>Explore the Deep &amp; Real Guangzhou</p>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2: Left Book Now, Right Contact us -->
+      <div class="row-bottom">
+        <a href="https://your-booking-link.com" class="book-btn">Book Now</a>
+        <div class="header-right">
+          <span class="contact-title">Contact us</span>
+          <div class="contact-box">
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://your-wechat-link.com" target="_blank" aria-label="WeChat"><i class="fab fa-weixin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="tabs" aria-label="Site">
+    <a href="index.html" aria-current="page" class="active">Tours</a>
+    <a href="how-to-book.html">How to book</a>
+    <a href="about-us.html">About us</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container main">
+
+    <section class="card">
+      <div class="tour-cover-wrap">
+        <img class="tour-cover" src="img/guangzhou-city-highlights/1.png"
+          alt="Guangzhou City Highlights tour cover image">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="tour-head">Guangzhou City Highlights</h2>
+      <p class="hero__subtitle">Discover the city's must-see landmarks and historic sites in 1 day.</p>
+      <div class="kv">
+        <div class="kv__item"><span class="kv__key"><i class="fa-regular fa-clock"></i> Duration</span><span
+            class="kv__val">8h</span></div>
+        <div class="kv__item"><span class="kv__key"><i class="fa-solid fa-tag"></i> Price</span><span
+            class="kv__val">From 900 RMB (130 USD) per group</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="tour-head">Why Join This Tour?</h2>
+      <ul class="list list-check">
+        <li>Visit Chen Clan Ancestral Hall, a masterpiece of Lingnan architecture</li>
+        <li>Taste authentic Cantonese dim sum & desserts</li>
+        <li>End the day at Huacheng Square, with skyline views of Canton Tower</li>
+        <li>Flexible: we can adjust the timing, stops, or meals (e.g. halal food) according to your needs.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="tour-head">Private Tour Price</h2>
+      <div class="table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Numbers of Guests</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Small group (1~6)</td>
+              <td>￥900 ($130)</td>
+            </tr>
+            <tr>
+              <td>Big group (More than 6)</td>
+              <td>￥1,000 ($145)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="tour-head">Includes</h2>
+      <ul class="list list-check">
+        <li>An experienced English-speaking guide for 8 hours</li>
+        <li>Customized itinerary planning</li>
+        <li>Local support</li>
+      </ul>
+    </section>
+
+
+
+    <section class="card">
+      <h2 class="tour-head">Excludes</h2>
+      <ul class="list list-cross">
+        <li>Transportation (please use taxi or metro; your guide will assist)</li>
+        <li>Entrance tickets (Chen Clan Ancestral Hall: 10 RMB per person)</li>
+        <li>Meals (for both of you &amp; the guide)</li>
+        <li>Additional guide service: 100 RMB / H</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="tour-head">Private car service (optional)</h2>
+      <div class="table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Vehicle Type</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5-seater car</td>
+              <td>￥980 ($140)</td>
+            </tr>
+            <tr>
+              <td>7-seater van</td>
+              <td>￥1,280 ($185)</td>
+            </tr>
+            <tr>
+              <td>9-seater van</td>
+              <td>￥1,580 ($230)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Price includes 8-hour, 100 km service and parking fees.</p>
+      </div>
+    </section>
+
+    <section class="card gx-itn" aria-label="Itinerary">
+      <div class="gx-itn__header">
+        <h2 class="tour-head">Itinerary</h2>
+        <label class="gx-itn__toggle">
+          <span>Expand all</span>
+          <span id="gxItnSwitch" class="gx-itn__switch" role="switch" aria-checked="false" tabindex="0"></span>
+        </label>
+      </div>
+
+      <div class="gx-itn__list">
+        <!-- Row 1 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content" open>
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">10:00 Meet your guide at your hotel</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <!-- <div class="gx-itn__body">
+              <p>Meet your guide at hotel lobby. Explore <strong>Chen Clan Ancestral Hall</strong>, then stroll
+                <strong>Shamian Island</strong> for riverside views.
+              </p>
+            </div> -->
+          </details>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">10:30 Chen Clan Ancestral Hall</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+              <p>Explore Guangzhou’s traditional art and architecture.</p>
+              <div class="itn__img-fit">
+                <img src="img/guangzhou-city-highlights/2.jpg" alt="Shamian Island" loading="lazy">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">12:00 Cantonese Dim sum and dessert stop</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+              <p>Halal options available.</p>
+              <div class="itn__img-fit">
+                <img src="img/guangzhou-city-highlights/3.png" alt="Shamian Island" loading="lazy">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">14:00 Explore Yongqing Fang and visit Bruce Lee’s Ancestral Home</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+              <div class="itn__img-fit">
+                <img src="img/guangzhou-city-highlights/4.png" alt="Shamian Island" loading="lazy">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">15:00 Shop at Beijing Road and visit the ancient Dafo Temple</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+              <div class="itn__img-fit">
+                <img src="img/guangzhou-city-highlights/5.png" alt="Shamian Island" loading="lazy">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">17:00 Huacheng Square</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+              <p>Enjoy skyline views of Canton Tower.</p>
+              <div class="itn__img-fit">
+                <img src="img/guangzhou-city-highlights/6.png" alt="Shamian Island" loading="lazy">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="gx-itn__row">
+          <div class="gx-itn__rail"><span class="gx-itn__dot" aria-hidden="true"></span></div>
+          <details class="gx-itn__content">
+            <summary class="gx-itn__summary">
+              <h3 class="gx-itn__day">18:00 The guide helps you get on the car back to your hotel</h3>
+              <span class="gx-itn__chev">▴</span>
+            </summary>
+            <div class="gx-itn__body">
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      const slider = document.getElementById('reviewSlider');
+      const slides = Array.from(slider.querySelectorAll('.review-slide'));
+      const dotsWrap = document.getElementById('reviewDots');
+      const prev = document.querySelector('.review-controls .prev');
+      const next = document.querySelector('.review-controls .next');
+
+      let i = 0, timer = null, delay = 4000;
+
+      // build dots
+      slides.forEach((_, idx) => {
+        const b = document.createElement('button');
+        b.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+        b.addEventListener('click', () => go(idx, true));
+        dotsWrap.appendChild(b);
+      });
+
+      function render() {
+        slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+        dotsWrap.querySelectorAll('button').forEach((d, idx) =>
+          d.classList.toggle('is-active', idx === i)
+        );
+      }
+
+      function go(n, manual = false) {
+        i = (n + slides.length) % slides.length;
+        render();
+        if (manual) restart();
+      }
+
+      function nextSlide() { go(i + 1); }
+      function prevSlide() { go(i - 1); }
+
+      function start() { timer = setInterval(nextSlide, delay); }
+      function stop() { clearInterval(timer); timer = null; }
+      function restart() { stop(); start(); }
+
+      // init
+      render(); start();
+
+      // controls
+      next.addEventListener('click', () => go(i + 1, true));
+      prev.addEventListener('click', () => go(i - 1, true));
+
+      // pause on hover
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+    })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <!-- 左列：Contact Us -->
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:19521235947@163.com">19521235947@163.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+8613812345678">+86 177 2815 4476</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://example.com"
+                style="color: rgb(37, 211, 102); font-weight: bold; text-decoration: underline;">Chat on WhatsApp </a>
+            </li>
+            <li>
+              <i class="fab fa-weixin"></i>
+              <a href="https://wa.me/8613812345678" target="_blank">WeChat ID: 821828626</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 右列：Follow Us 团队账号 -->
+        <div class="footer-right">
+          <h3>Follow Us for More Travel Tips</h3>
+          <p class="footer-desc">Discover Canton through our team's authentic experiences</p>
+          <ul class="team-socials">
+            <li>
+              <i class="fab fa-tiktok"></i> <span>Lucky</span>
+            </li>
+            <li>
+              <i class="fab fa-tiktok"></i> <span>Golden</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const sw = document.getElementById('gxItnSwitch');
+      if (!sw) return;  // 没找到就不绑定
+
+      const items = document.querySelectorAll('.gx-itn .gx-itn__content'); // details 元素
+      function setAll(open) {
+        items.forEach(d => d.open = open);
+        sw.classList.toggle('gx-itn__switch--on', open);
+        sw.setAttribute('aria-checked', String(open));
+      }
+      const isOn = () => sw.classList.contains('gx-itn__switch--on');
+
+      sw.addEventListener('click', () => setAll(!isOn()));
+      sw.addEventListener('keydown', e => {
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); setAll(!isOn()); }
+      });
+    })();
+  </script>
+
+
+
+
+</body>
+
+</html>
