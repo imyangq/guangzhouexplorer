@@ -1521,6 +1521,7 @@ body {
   align-items: center;
   /* 关键代码，垂直居中 */
   gap: 8px;
+  line-height: 1.8;
   /* 图标和文字之间的水平间距 */
 }
 
@@ -1921,4 +1922,9 @@ details[open] .gx-itn__chev {
   object-fit: cover;
   /* 填满卡片，可能裁切 */
   display: block;
+}
+
+.segment p {
+  line-height: 1.8;
+  /* 导游介绍文字更宽松 */
 }
