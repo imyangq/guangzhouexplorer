@@ -16,7 +16,8 @@
    - Git：https://git-scm.com/
    - VS Code：https://code.visualstudio.com/
 
-2. 注册Github账户，我会将你的账户添加到源码仓库开发者中。
+2. 注册 GitHub 账户，我会将你的账户添加到源码仓库开发者中。
+   - GitHub官网：https://github.com/
 
 3. 在本地初始化git的个人信息配置，并拉取远程仓库的代码。
 ```
